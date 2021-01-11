@@ -47,3 +47,39 @@ docker ps -a
 ```bash
 docker exec -it <name>/<id>
 ```
+
+## Task 1
+
+Starting a container with `ghost`.
+
+```bash
+docker run -d -p 2368:2368 ghost
+```
+
+Open your browser and go to `localhost:3468`. You should see the website.
+</br>
+Stopping and removing the container.
+
+```bash
+docker ps
+```
+
+The above command will allow us the `<Container ID>` which we will need to use later. Copy it and have it ready to be pasted in the next commands.
+
+```bash
+docker kill <container_id>
+docker rm <container_id>
+```
+
+If we check now whether the container exists or is available, we will notice its completely gone and new image must be created.
+
+```bash
+docker ps
+docker ps -a
+```
+
+To check whether the image is still available run the following command.
+
+```bash
+docker images
+```
