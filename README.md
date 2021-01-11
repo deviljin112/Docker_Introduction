@@ -27,3 +27,23 @@
 ## Demand and future of Docker
 
 ## Docker API
+
+Syntax and Commands:
+
+```bash
+docker pull <image_name>
+docker run <image_name>
+docker build -t <image_name>
+docker commit <image_name>/<container_id>
+docker start <container_id>
+docker stop <container_id>/<name>
+docker rm <container_id>/<name>
+docker ps
+docker ps -a
+```
+
+### Logging into a container
+
+```bash
+docker exec -it <name>/<id>
+```
