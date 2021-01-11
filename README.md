@@ -48,6 +48,12 @@ docker ps -a
 docker exec -it <name>/<id>
 ```
 
+## Mapping a port
+
+```bash
+docker run -d -p <host_port>:<container_port> <container_name>
+```
+
 ## Task 1
 
 Starting a container with `ghost`.
@@ -82,4 +88,12 @@ To check whether the image is still available run the following command.
 
 ```bash
 docker images
+```
+
+## Task 2
+
+Copy file into the container.
+
+```bash
+docker cp <host_file_location> <container_id>:<container_file_location>
 ```
