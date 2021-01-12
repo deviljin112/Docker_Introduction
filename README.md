@@ -54,6 +54,23 @@ docker exec -it <name>/<id>
 docker run -d -p <host_port>:<container_port> <container_name>
 ```
 
+## Building Docker Image
+
+- To build a docker image we need to create a "Dockerfile"
+- Why? To automate the tasks in an `image/container`
+- What information is required inside the Dockerfile
+  - It depends on the client's requirements
+  - We need to know the dependancies to run the app/db
+  - We need to wrap up all the dependencies in our Dockerfile and instrcut the execution command
+
+## Syntax and Keywords for Dockerfile
+
+- `FROM` is used to tell docker which base image to use
+- `LABEL MAINTAINER=hswic@spartaglobal.com`
+- `COPY` folder or files into the container from local host
+- `EXPOSE` default port of the container
+- `CMD` the execution command `["nginx", "-g", "daemon off"]`
+
 ## Task 1
 
 Starting a container with `ghost`.
