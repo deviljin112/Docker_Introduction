@@ -106,3 +106,11 @@ Creating an image and pushing to dockerhub.
 docker commit <container_id> <your_username>/<dockerhub_repo>
 docker push <username>/<dockerhub_repo>:<tagname>
 ```
+
+## Task 4
+
+Getting logs from a container and pipping to a file.
+
+```bash
+docker logs <container_id> --details --timestamps > <file_name>.txt
+```
