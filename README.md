@@ -97,3 +97,12 @@ Copy file into the container.
 ```bash
 docker cp <host_file_location> <container_id>:<container_file_location>
 ```
+
+## Task 3
+
+Creating an image and pushing to dockerhub.
+
+```bash
+docker commit <container_id> <your_username>/<dockerhub_repo>
+docker push <username>/<dockerhub_repo>:<tagname>
+```
