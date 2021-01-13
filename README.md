@@ -24,7 +24,17 @@
 - Docker engine connects the container with OS and only use the resources required
 - VM works with Hypervisor to connect guest OS/VM with host OS/server
 
-## Demand and future of Docker
+## Microservices
+
+Micoservices are a collection of small services that interact with each other to create the entire infrastructure. These services are:
+
+- Highly maintainable and testable
+- Independently deployable
+- Organised into loose groups
+
+## Monolithic
+
+A monolithic application is a Host machine running most of the application on a container. This container is scaled up or down per needs, and the container is cloned as needed. Contrary to microservices where each segment of the infrastructure is seperated into its own container. With monolithic approach the entire container runs most of the infrastructure which is then cloned into a new container depending on the needs.
 
 ## Docker API
 
